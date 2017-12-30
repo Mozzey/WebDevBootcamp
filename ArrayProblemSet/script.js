@@ -7,15 +7,20 @@ function printReverse(arr) {
 }
 
 function isUniform(arr) {
-	var counter;
+	var first = arr[0];
 
 	for(var i = 0; i < arr.length; i++) {
-		counter = arr[0];
-		if (counter === arr[i]) {
-			return true;
-		} else {
+		if (first !== arr[i]) {
 			return false;
 		}
 	}
+	return true;
 }
 
+function sumOfAll(arr) {
+	var count = 0;
+	arr.forEach(function(number) {
+		count += number;
+	})
+	return count;
+}
