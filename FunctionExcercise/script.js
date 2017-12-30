@@ -1,13 +1,25 @@
+// function isEven(num) {
+// 	if (num % 2 === 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
 function isEven(num) {
-	if (num % 2 === 0) {
-		return "true";
-	} else {
-		return "false";
-	}
+	return num % 2 === 0;
 }
 
 function factorial(num) {
-	for (var i = 1; i < num; i++) {
-		return i * (i + 1);
+	var result = 1;
+
+	for (var i = 2; i <= num; i++) {
+		result *= i;
 	}
+	return result;
+}
+
+function kebabToSnake(str) {
+	var newStr = str.replace(/-/g , "_");
+	return newStr;
 }
