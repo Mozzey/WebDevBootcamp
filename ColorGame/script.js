@@ -113,6 +113,8 @@ function randomColor() {
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
+//MODE BUTTONS OUTSIDE OF FUNCTION
+//
 // easyBtn.addEventListener("click", function() {
 //   easyBtn.classList.add("selected");
 //   hardBtn.classList.remove("selected");
